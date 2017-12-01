@@ -1,0 +1,11 @@
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\bin\Debug\A2_project_Clean.exe.config
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\bin\Debug\A2_project_Clean.exe
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\bin\Debug\A2_project_Clean.pdb
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\bin\Debug\A2_project_Clean.xml
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\obj\Debug\A2_project_Clean.vbprojResolveAssemblyReference.cache
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\obj\Debug\A2_project_Clean.Form1.resources
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\obj\Debug\A2_project_Clean.Resources.resources
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\obj\Debug\A2_project_Clean.vbproj.GenerateResource.Cache
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\obj\Debug\A2_project_Clean.exe
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\obj\Debug\A2_project_Clean.xml
+\\svrhome1.curricula.local\J\pjamieson\Home\Visual Studio 2017\Projects\A2_project_Clean\A2_project_Clean\obj\Debug\A2_project_Clean.pdb
