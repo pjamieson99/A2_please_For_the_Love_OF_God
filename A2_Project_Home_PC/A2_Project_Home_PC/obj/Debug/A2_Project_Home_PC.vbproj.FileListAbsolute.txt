@@ -1,0 +1,11 @@
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\bin\Debug\A2_Project_Home_PC.exe.config
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\obj\Debug\A2_Project_Home_PC.vbprojResolveAssemblyReference.cache
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\obj\Debug\A2_Project_Home_PC.Form1.resources
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\obj\Debug\A2_Project_Home_PC.Resources.resources
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\obj\Debug\A2_Project_Home_PC.vbproj.GenerateResource.Cache
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\bin\Debug\A2_Project_Home_PC.exe
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\bin\Debug\A2_Project_Home_PC.pdb
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\bin\Debug\A2_Project_Home_PC.xml
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\obj\Debug\A2_Project_Home_PC.exe
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\obj\Debug\A2_Project_Home_PC.xml
+c:\users\peter\documents\visual studio 2015\Projects\A2_Project_Home_PC\A2_Project_Home_PC\obj\Debug\A2_Project_Home_PC.pdb
