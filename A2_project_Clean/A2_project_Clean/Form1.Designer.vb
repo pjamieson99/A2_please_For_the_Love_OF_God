@@ -33,7 +33,7 @@ Partial Class Form1
         Me.Display.BackColor = System.Drawing.Color.White
         Me.Display.Location = New System.Drawing.Point(12, 12)
         Me.Display.Name = "Display"
-        Me.Display.Size = New System.Drawing.Size(1491, 540)
+        Me.Display.Size = New System.Drawing.Size(1500, 540)
         Me.Display.TabIndex = 0
         Me.Display.TabStop = False
         '

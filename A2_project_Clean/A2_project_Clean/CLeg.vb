@@ -35,6 +35,8 @@
 
     Public Diameter As Double
 
+    Public PrevLine As CLeg
+
     Public Sub New(x As Integer, y As Integer, s As Integer, c As Integer, a As Integer, gc As Integer, Optional rnd As Random = Nothing)
         'set properties
         LXpos = x
@@ -44,10 +46,10 @@
         LPx2 = LXpos
         LPy2 = LYpos + 100
         If Not IsNothing(rnd) Then
-            Speed = rnd.Next(1, 20)
-            Clock = rnd.Next(5, 50)
-            Angle = rnd.Next(40, 50)
-            GoThroughClock = rnd.Next(0, 50)
+            Speed = rnd.Next(0, 16)
+            Clock = rnd.Next(5, 100)
+            Angle = rnd.Next(40, 180)
+            GoThroughClock = rnd.Next(0, 100)
         Else
             Speed = s
             Clock = c
@@ -57,7 +59,17 @@
         LP1 = New Point(LXpos, LYpos)
         LP2 = New Point(LXpos, LYpos + 100)
         Diameter = 100
+
     End Sub
+
+    Function Clone()
+        Return Me.MemberwiseClone()
+    End Function
+
+    Sub PrevPoint()
+        PrevLine = New CLeg(LXpos, LYpos, Speed, Clock, Angle, GoThroughClock)
+    End Sub
+
 
     Sub AngleLock(floor As CFloor)
 
@@ -229,9 +241,9 @@
     End Sub
 
     Sub Draw(g As Graphics, ColourBrush As Pen)
-        DrawPoint1.X = LPx1
+        DrawPoint1.X = LPx1 - Form1.FurthestAnimalPos
         DrawPoint1.Y = LPy1
-        drawPoint2.X = LPx2
+        drawPoint2.X = LPx2 - Form1.FurthestAnimalPos
         drawPoint2.Y = LPy2
         g.DrawLine(ColourBrush, DrawPoint1.X, DrawPoint1.Y, drawPoint2.X, drawPoint2.Y)
     End Sub

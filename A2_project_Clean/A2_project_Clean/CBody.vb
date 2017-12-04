@@ -19,6 +19,7 @@
     Public BPy11 As Double
     Public BPy22 As Double
 
+    Public PrevBody As CBody
 
     Public BPx111 As Double
     Public BPx222 As Double
@@ -48,6 +49,9 @@
     Public Connections As New List(Of PointF)
     Public StaticConnections As New List(Of PointF)
 
+    Dim DrawX1 As Double
+    Dim DrawX2 As Double
+
 
     Public Sub New(x1, y1, x2, y2, n)
         Bypos1 = y1
@@ -61,6 +65,11 @@
         BPy2 = y2
         Diameter = BPx2 - BPx1
         NumOfLegs = n
+
+    End Sub
+
+    Sub PrevPoint()
+        PrevBody = New CBody(Bxpos1, Bypos1, Bxpos2, Bypos2, NumOfLegs)
     End Sub
 
     Sub BodyPoints(P1Legs As PointF)
@@ -107,7 +116,7 @@
                 Pivot = Line.Pivot
             End If
 
-        ElseIf Leftside = False And Rightside = True And Form1.checkfloor(floor, Line.Pivot.Y) = True Then
+        ElseIf Leftside = False And Rightside = True And Form1.CheckFloor(floor, Line.Pivot.Y) = True Then
 
             If Pivot.X > Line.Pivot.X Or Form1.CheckFloor(floor, Pivot.Y) = False Then
                 Pivot = Line.Pivot
@@ -151,15 +160,6 @@
     End Sub
     Sub FallOver(g As Graphics, line(,) As CLeg)
 
-        'BPy111 = BPy11
-        'BPx111 = BPx11
-        'BPy222 = BPy22
-        'BPx222 = BPx22
-
-        'BPy11 = BPy1
-        'BPx11 = BPx1
-        'BPy22 = BPy2
-        'BPx22 = BPx2
 
         AngleIncrease = 0
         Bxpos1 = BPx1
@@ -199,6 +199,10 @@
 
         ResetCoM()
     End Sub
+
+    Function Clone()
+        Return Me.MemberwiseClone()
+    End Function
 
     Sub FindFriction(Line As CLeg, Floor As CFloor)
         Friction = 0
@@ -240,8 +244,9 @@
     End Sub
 
     Sub Draw(g As Graphics, ColourPen As Pen)
-
-        g.DrawLine(ColourPen, Convert.ToInt32(BPx1), Convert.ToInt32(BPy1), Convert.ToInt32(BPx2), Convert.ToInt32(BPy2))
+        DrawX1 = BPx1 - Form1.FurthestAnimalPos
+        DrawX2 = BPx2 - Form1.FurthestAnimalPos
+        g.DrawLine(ColourPen, Convert.ToInt32(DrawX1), Convert.ToInt32(BPy1), Convert.ToInt32(DrawX2), Convert.ToInt32(BPy2))
 
     End Sub
 
