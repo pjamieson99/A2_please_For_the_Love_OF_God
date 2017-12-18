@@ -25,6 +25,7 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Me.Display = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Menu_Box = New System.Windows.Forms.Button()
         CType(Me.Display, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -33,7 +34,7 @@ Partial Class Form1
         Me.Display.BackColor = System.Drawing.Color.White
         Me.Display.Location = New System.Drawing.Point(12, 12)
         Me.Display.Name = "Display"
-        Me.Display.Size = New System.Drawing.Size(1491, 540)
+        Me.Display.Size = New System.Drawing.Size(1500, 540)
         Me.Display.TabIndex = 0
         Me.Display.TabStop = False
         '
@@ -42,12 +43,22 @@ Partial Class Form1
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 40
         '
+        'Menu_Box
+        '
+        Me.Menu_Box.Location = New System.Drawing.Point(29, 515)
+        Me.Menu_Box.Name = "Menu_Box"
+        Me.Menu_Box.Size = New System.Drawing.Size(75, 23)
+        Me.Menu_Box.TabIndex = 1
+        Me.Menu_Box.Text = "Menu"
+        Me.Menu_Box.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(1515, 601)
+        Me.Controls.Add(Me.Menu_Box)
         Me.Controls.Add(Me.Display)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -58,4 +69,5 @@ Partial Class Form1
 
     Friend WithEvents Display As PictureBox
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Menu_Box As Button
 End Class
